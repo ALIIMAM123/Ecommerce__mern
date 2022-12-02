@@ -1,0 +1,486 @@
+.ProductDetails {
+	background-color: white;
+	width: 100vw;
+	max-width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	padding: 3rem 2rem 3rem 6rem;
+}
+
+.ProductDetails > div {
+	width: 100%;
+	/* background-color: rgba(216, 218, 216, 0.2); */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	/* border: 1px solid rgba(48, 47, 47, 0.3); */
+	box-sizing: border-box;
+	padding: 3rem 3rem;
+}
+.ProductDetails > div:last-child {
+	align-items: flex-start;
+}
+
+.carouselImage {
+	width: 22rem;
+	height: 25rem;
+	border-radius: 5px;
+	margin-top: 1rem;
+}
+
+.detailsBlock-1 > h2 {
+	color: rgb(54, 54, 54);
+	font: 600 1.2rem "Roboto";
+}
+
+.detailsBlock-1 > p {
+	color: rgba(54, 54, 54, 0.582);
+	font: 200 0.9rem cursive;
+}
+
+.detailsBlock-2 {
+	display: flex;
+	border-top: 1px solid rgba(0, 0, 0, 0.205);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+	justify-content: flex-start;
+	align-items: center;
+	width: 68%;
+	padding: 5px 4px;
+}
+
+.detailsBlock-2-span {
+	font: 200 0.8vmax cursive;
+	color: rgba(0, 0, 0, 0.699);
+}
+
+.detailsBlock-3 {
+	width: 70%;
+}
+
+.detailsBlock-3 > h1 {
+	color: rgba(17, 17, 17, 0.795);
+	font: 400 1.4rem "Franklin Gothic Medium";
+	margin: 5px 0px;
+}
+
+.detailsBlock-3-1 {
+	display: flex;
+	align-items: center;
+}
+
+.detailsBlock-3-1-1 > button {
+	border: none;
+	background-color: black;
+	padding: 6px 9px;
+	cursor: pointer;
+	color: white;
+	/* border-radius: 6px; */
+	transition: all 0.5s;
+}
+
+.detailsBlock-3-1-1 > button:first-child {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.detailsBlock-3-1-1 > button:last-child {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.detailsBlock-3-1-1 > button:hover {
+	border: none;
+	background-color: tomato;
+	padding: 6px 9px;
+	cursor: pointer;
+	color: white;
+	transition: all 0.5s;
+}
+
+.detailsBlock-3-1-1 > input {
+	border: none;
+	padding: 6px 9px;
+
+	width: 1.9rem;
+	text-align: center;
+	font: 1rem 400 cursive "roboto";
+	color: rgb(17, 12, 12);
+	background-color: rgba(180, 178, 178, 0.74);
+	outline: none;
+	cursor: pointer;
+}
+
+.detailsBlock-3-1 > button:last-child {
+	padding: 6px 9px;
+	background-color: tomato;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	margin: 1rem;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.detailsBlock-3-1 > button:last-child:hover {
+	background-color: rgb(67, 43, 39);
+}
+
+.detailsBlock-3 > p {
+	border-top: 1px solid rgba(0, 0, 0, 0.205);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+	padding: 0.8rem 0;
+	color: rgba(0, 0, 0, 0.651);
+	font: 400 1rem "Roboto";
+	margin: 1rem 0;
+}
+
+.detailsBlock-4 {
+	color: rgba(0, 0, 0, 0.897);
+	font: 500 1rem sans-serif;
+}
+
+.detailsBlock-4 > p {
+	color: rgba(0, 0, 0, 0.534);
+	font: 300 0.8rem sans-serif;
+}
+.submitReview {
+	border: none;
+	background-color: tomato;
+	font: 500 1rem "Roboto";
+	border-radius: 20px;
+	padding: 0.6vmax 2vmax;
+	margin: 1vmax 0;
+	color: white;
+	cursor: pointer;
+	transition: all 0.5s;
+	outline: none;
+}
+
+.submitReview:hover {
+	background-color: rgb(197, 68, 45);
+	transform: scale(1.1);
+}
+
+.reviewsHeading {
+	font-size: 1rem;
+	color: rgb(63, 59, 59);
+	border-bottom: 1px solid grey;
+	padding: 10px;
+	width: 20rem;
+	margin: auto;
+	text-align: center;
+}
+.reviews {
+	display: flex;
+	/* flex-direction: column; */
+	overflow: auto !important;
+	/* overflow: scroll; */
+	margin-bottom: 20px;
+	padding: 1rem;
+}
+
+.reviewCard {
+	flex: none;
+	display: flex;
+	flex-direction: column;
+	/* background-color: rgb(224, 221, 221); */
+	align-items: center;
+	width: 20%;
+	padding: 40px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.reviewCard > img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.reviewCard > p {
+	color: black;
+	font: 600 "roboto";
+}
+
+.noReviews {
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 2rem;
+	color: rgba(39, 38, 38, o.1);
+}
+@media screen and (max-width: 600px) {
+	.ProductDetails {
+		flex-direction: column;
+		/* height: unset; */
+		padding: 3rem 2rem;
+	}
+	.ProductDetails > div:last-child {
+		/* background-color: red; */
+		align-items: center;
+	}
+
+	.detailsBlock-1 > h2 {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	.detailsBlock-1 > p {
+		text-align: center;
+		font-size: 0.8rem;
+	}
+	.carouselImage {
+		width: 13rem;
+		height: 13rem;
+		/* padding: 2rem; */
+	}
+	.detailsBlock-2 {
+		justify-content: center;
+	}
+	.detailsBlock-2 > span {
+		font-size: 0.6rem;
+	}
+	.detailsBlock-3 > h1 {
+		font: 700 1rem "Franklin Gothic Medium";
+		text-align: center;
+	}
+	.detailsBlock-3-1 {
+		flex-direction: column;
+	}
+
+	.detailsBlock-3-1-1 {
+		padding: 2rem 0;
+	}
+	.detailsBlock-3-1-1 > button {
+		padding: 1.2vmax;
+		width: 2rem;
+	}
+
+	.detailsBlock-3-1-1 > button:first-child {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	.detailsBlock-3-1-1 > button:last-child {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.detailsBlock-3-1-1 > input {
+		padding: 0.45rem 0.6rem 0.3rem;
+		width: 0.9rem;
+		height: 0.99rem;
+		font: 400 0.68rem "Roboto";
+	}
+
+	.detailsBlock-3-1 > button:last-child {
+		font: 500 0.77rem "Roboto";
+		padding: 1.5vmax;
+		width: 6rem;
+		margin: 0.3rem;
+	}
+	.detailsBlock-3 > p {
+		padding: 0.5rem 0;
+		text-align: center;
+		font: 400 0.8rem "Roboto";
+	}
+	.detailsBlock-4 {
+		font: 500 0.7rem sans-serif;
+	}
+	.detailsBlock-4 > p {
+		font: 300 0.6rem sans-serif;
+	}
+
+	.submitReview {
+		font: 500 0.7rem "Roboto";
+		padding: 1.5vmax;
+		width: 8rem;
+		margin: 1rem 0rem;
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+	.ProductDetails {
+		height: unset;
+		padding: 3rem 3rem;
+	}
+	.ProductDetails > div:last-child {
+		align-items: center;
+	}
+
+	.detailsBlock-1 > h2 {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	.detailsBlock-1 > p {
+		text-align: center;
+		font-size: 0.8rem;
+	}
+	.carouselImage {
+		width: 15rem !important;
+		height: 15rem !important;
+		/* padding: 2rem; */
+	}
+	.detailsBlock-2 {
+		justify-content: center;
+	}
+	.detailsBlock-2 > span {
+		font-size: 0.6rem;
+	}
+	.detailsBlock-3 > h1 {
+		font: 700 1rem "Franklin Gothic Medium";
+		text-align: center;
+	}
+	.detailsBlock-3-1 {
+		flex-direction: column;
+	}
+
+	.detailsBlock-3-1-1 {
+		padding: 2rem 0;
+	}
+	.detailsBlock-3-1-1 > button {
+		padding: 1.2vmax;
+		width: 2rem;
+	}
+
+	.detailsBlock-3-1-1 > button:first-child {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	.detailsBlock-3-1-1 > button:last-child {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.detailsBlock-3-1-1 > input {
+		padding: 0.73rem 0.6rem 0.633rem;
+		width: 0.9rem;
+		height: 0.7rem;
+
+		font: 400 0.68rem "Roboto";
+	}
+
+	.detailsBlock-3-1 > button:last-child {
+		font: 500 0.77rem "Roboto";
+		padding: 1.5vmax;
+		width: 6rem;
+		margin: 0.3rem;
+	}
+	.detailsBlock-3 > p {
+		padding: 0.5rem 0;
+		text-align: center;
+		font: 400 0.8rem "Roboto";
+	}
+	.detailsBlock-4 {
+		font: 500 0.7rem sans-serif;
+	}
+	.detailsBlock-4 > p {
+		font: 300 0.6rem sans-serif;
+	}
+
+	.submitReview {
+		font: 500 0.7rem "Roboto";
+		padding: 1.5vmax;
+		width: 8rem;
+		margin: 1rem 0rem;
+	}
+}
+
+.searchBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 100%;
+	height: 100vh;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.searchBox > input[type="text"] {
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+	background-color: white;
+	color: black;
+	height: 6%;
+	width: 40%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	box-sizing: border-box;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid tomato;
+	outline: none;
+	font-size: 1.3rem;
+	border-radius: 10px;
+	position: relative;
+}
+
+.searchBox > input[type="submit"] {
+	/* box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px; */
+	background-color: tomato;
+	color: black;
+	height: 6%;
+	width: 10%;
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	cursor: pointer;
+	font-size: 1.1rem;
+	color: white;
+}
+
+.searchBox > input[type="submit"]:hover {
+	background-color: rgb(103, 37, 24);
+}
+.searchBox > input[type="submit"]:active {
+	background-color: rgb(31, 6, 2);
+}
+.check {
+	position: relative;
+	background-color: red;
+}
+
+.submit-button {
+	position: absolute;
+
+	left: 60%;
+
+	border-radius: 10px;
+	outline: none;
+	border: none;
+}
+
+@media screen and (max-width: 767px) {
+	.searchBox > input[type="text"] {
+		min-width: 90vw;
+	}
+	.searchBox > input[type="submit"] {
+		width: 20%;
+	}
+
+	.check {
+		position: relative;
+		background-color: red;
+	}
+
+	.submit-button {
+		position: absolute;
+
+		left: 75%;
+		border-radius: 10px;
+		outline: none;
+		border: none;
+	}
+}

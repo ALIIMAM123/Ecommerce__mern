@@ -1,0 +1,36 @@
+.loading {
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+}
+.loading > div {
+	width: 5rem;
+
+	/* background-color: tomato; */
+	height: 5rem;
+	border-bottom: 4px solid rgba(12, 11, 11, 0.66);
+	border-radius: 50%;
+	animation: loadingRotate 800ms linear infinite;
+	/* transform: scale(2); */
+}
+
+@keyframes loadingRotate {
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+.please_wait {
+	font-size: 0.8rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	color: white;
+	font-weight: bold;
+}

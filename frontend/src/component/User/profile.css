@@ -1,0 +1,265 @@
+.profile-image-alt {
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+}
+.profileContainer {
+	display: flex;
+	margin-top: 5rem;
+	/* background-color: rgb(230, 191, 191); */
+	justify-content: space-evenly;
+}
+
+.img__profile {
+	height: 6rem;
+	width: 6rem;
+	border-radius: 50%;
+}
+
+.left-side-wrapper-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.right-side {
+	background-color: rgba(234, 234, 235, 0.159);
+	width: 50%;
+}
+@media screen and (max-width: 767px) {
+	.profileContainer {
+		flex-direction: column;
+		align-items: center;
+	}
+	.left-side {
+		background-color: rgb(219, 219, 242);
+		width: 100%;
+	}
+	.right-side {
+		background-color: rgb(219, 219, 242);
+		width: 100%;
+	}
+	.detail-container {
+		background-color: tomato;
+		width: 100%;
+		padding: 0px;
+		/* margin-top: 1rem; */
+	}
+	.left-side-wrapper-container {
+		width: 100%;
+		/* background-color: green; */
+	}
+	.profileName {
+		/* background-color: tomato; */
+		width: 100% !important;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.update-user-buton {
+		background-color: tomato;
+		cursor: pointer;
+		width: 90%;
+		padding: 10px 20px;
+		/* border-radius: 10px; */
+		border: none;
+		margin-top: 20px;
+		font-size: 0.8rem;
+		font-weight: 600;
+	}
+
+	.detail-container {
+		/* padding-top: 5px; */
+		/* padding-bottom: 5px; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.email-container,
+	.order-container,
+	.fullName-container,
+	.changePassword-container,
+	.joinedOn-container {
+		background-color: white;
+		padding: 10px 0px 10px 0px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-weight: 900;
+		display: flex;
+		/* flex-direction: column; */
+	}
+	.joinedOn-container {
+		background-color: tomato;
+		padding: 10px 0px 10px 0px;
+	}
+	.email-heading {
+		margin-left: 20px;
+	}
+
+	.email-para {
+		margin-right: 20px;
+	}
+	.detail-container {
+		display: flex;
+		justify-content: space-between;
+		/* padding: 10px; */
+		max-width: 100%;
+	}
+	.email-para {
+		/* display: flex; */
+		/* justify-self: flex-start; */
+	}
+	.change-password-container {
+		/* background-color: red; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.password-change-button {
+		background-color: rgba(12, 11, 11, 0.924);
+		width: 90%;
+		padding: 10px 20px;
+		/* border-radius: 10px; */
+		border: none;
+		/* margin-top: 20px; */
+		font-size: 0.8rem;
+		font-weight: 600;
+		margin-bottom: 10px;
+		color: white;
+		cursor: pointer;
+	}
+	.password-change-button:hover {
+		background-color: rgb(181, 172, 172);
+	}
+	.myOrder {
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.profileContainer {
+		/* flex-direction: column; */
+		align-items: center;
+		height: 100vh;
+		margin-top: 10px !important;
+	}
+	.left-side {
+		/* background-color: rgb(219, 219, 242); */
+		width: 30%;
+	}
+	.right-side {
+		/* background-color: rgb(219, 219, 242); */
+		width: 30%;
+		/* padding: 20px; */
+	}
+	.detail-container {
+		background-color: tomato;
+		width: 100%;
+		padding: 0px;
+		min-height: 5vh;
+		/* margin-top: 1rem; */
+	}
+	.left-side-wrapper-container {
+		width: 100%;
+		/* background-color: green; */
+		margin-top: 3.7rem;
+	}
+	.profileName {
+		/* background-color: tomato; */
+		width: 100% !important;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.update-user-buton {
+		background-color: tomato;
+		width: 90%;
+		padding: 10px 20px;
+		/* border-radius: 10px; */
+		border: none;
+		margin-top: 3rem !important;
+		font-size: 0.8rem;
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.detail-container {
+		/* padding-top: 5px; */
+		/* padding-bottom: 5px; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.email-container,
+	.order-container,
+	.fullName-container,
+	.changePassword-container,
+	.joinedOn-container {
+		background-color: white;
+		padding: 10px 0px 10px 0px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-weight: 900;
+		display: flex;
+		/* flex-direction: column; */
+	}
+	.joinedOn-container {
+		background-color: tomato;
+		padding: 10px 0px 10px 0px;
+	}
+	.email-heading {
+		margin-left: 20px;
+	}
+
+	.email-para {
+		margin-right: 20px;
+	}
+	.detail-container {
+		display: flex;
+		justify-content: space-between;
+		/* padding: 10px; */
+		max-width: 100%;
+	}
+	.email-para {
+		/* display: flex; */
+		/* justify-self: flex-start; */
+	}
+	.change-password-container {
+		/* background-color: red; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.password-change-button {
+		background-color: tomato;
+		width: 90%;
+		padding: 10px 20px;
+		/* border-radius: 10px; */
+		border: none;
+		/* margin-top: 20px; */
+		font-size: 0.8rem;
+		font-weight: 600;
+		/* margin-bottom: 10px; */
+		background-color: rgba(12, 11, 11, 0.924);
+		color: white;
+		cursor: pointer;
+	}
+	.password-change-button:hover {
+		background-color: rgb(181, 172, 172);
+	}
+	.myOrder {
+		margin-bottom: 15px;
+	}
+}
+
+/* @media screen and (min-width: 1025px) {
+	.left-side-wrapper-container {
+		width: 100%;
+		background-color: green;
+		margin-top: 5.5rem !important;
+	}
+} */

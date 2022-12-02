@@ -1,0 +1,84 @@
+.heading-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	/* width: 95% !important; */
+	/* padding: 0%; */
+}
+
+.faq-container {
+	position: relative;
+	padding: 5px;
+	padding-left: 0px;
+	padding-left: 0px;
+	width: 100%;
+	/* background-color: red; */
+}
+
+.arrow-image {
+	transform: translateY(-10px);
+	transition: 1s ease;
+	margin-top: 13px;
+	height: 17px;
+
+	position: absolute;
+	right: 16px;
+
+	top: 12px;
+	width: 20px;
+}
+.ques {
+	background-color: rgba(225, 238, 238, 0.2);
+	padding: 10px;
+	padding-left: 6px;
+
+	border-radius: 10px;
+	width: 94%;
+	font-family: "roboto" !important;
+	font-size: 0.7rem;
+	font-weight: 600;
+	margin-right: 27px !important;
+}
+
+.ans {
+	border-radius: 10px;
+	width: 95%;
+
+	font-family: roboto;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+.ans:hover {
+	color: blueviolet;
+}
+.category-items {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	padding-left: 10px;
+}
+
+.empty-dot {
+	height: 5px;
+	width: 5px;
+	background-color: rgb(137, 134, 134);
+	border-radius: 50%;
+	margin-right: 4px;
+}
+
+.cross-icon {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+.select-item {
+	background-color: rgba(201, 144, 253, 0.4);
+
+	width: 100%;
+	padding: 6px;
+	color: black;
+	border-radius: 10px;
+}
